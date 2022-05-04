@@ -1,0 +1,20 @@
+.header-navbar{
+    background: #0AA1DD;
+    
+    
+    
+}
+.nav-item{
+   margin-left: 20px;
+   font-size: 22px;
+   text-decoration: none;
+   font-weight: 500;
+    
+}
+.logout-btn{
+    cursor: pointer;
+    color: white;
+}
+.logout-btn:hover{
+    color:black
+}

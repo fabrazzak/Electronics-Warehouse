@@ -1,0 +1,288 @@
+[
+    {
+      "name": "Dell Vostro 3500, Intel i3 11th Gen, 4GB Ram",
+      "supplierName": "Abdur Razzak",
+      "sold":13,
+      "price": 47499,
+      "description":"Dell Vostro 15 3500. Intel i3 11th Gen 1115G4. 4GB 2666 MHz. 1TB HDD. Intel UHD Graphics",
+      "quantity": 20,
+      "img": "https://i.ibb.co/6446QWT/8924a55cc34c09a63d669f2b9c012b0c.jpg"
+      },
+      {
+    "name": "Kotion Each G2000 Over -Ear Gaming HeadPhone With Mic ",
+    "supplierName": "Abdur Razzak",
+    "sold":13,
+    "price": 3099,
+    "description":"Brand Name: KOTION EACH . Model Number: KOTION EACH G2000 and G2100.Style: Headband.Communication",
+    "quantity": 20, 
+    "img": "https://static-01.daraz.com.bd/p/0d0a15e5804994ca1ef0c31b4e1057ea.jpg"
+  },
+      
+    {
+      "name": "Dell Inspiron 15 3501, Intel i3 11th Gen 1115G4, 4GB Ram ",
+      "supplierName": "Abdur Razzak",
+      "sold":13,
+      "price":50500,
+       "description":"Dell Vostro 15 3500. Intel i3 11th Gen 1115G4. 4GB 2666 MHz. 1TB HDD. Intel UHD Graphics",
+       "quantity": 19,
+       "img": "https://i.ibb.co/6446QWT/8924a55cc34c09a63d669f2b9c012b0c.jpg"
+       
+      },
+      {
+        "name": "Air Conditioner 1.5 Ton Singer Hot & Cool Green Inverter",
+        "supplierName": "Abdur Razzak",
+        "sold":13,
+        "price": 69990,
+        "description":"Capacity: 1.5 Ton | 18000 BTU; up to 60% Energy Saving;ZoneFollow (I Feel);Self Clean+;High ensity Filter;Fast Cool;",
+              "quantity": 7,
+      "img": "https://singerbd.com/pub/media/catalog/product/cache/482df9e5219860e2561c4ec99993e0ed/1/8/18ag13grim.jpg"
+    },
+    {
+      "name": "Dell 18.5 inch led",
+      "supplierName": "Abdur Razzak",
+      "sold":13,
+      "price": 10079,
+      "description":"Dell 18.5 Inch LED Backlit Monitor. Maximum resolution. Aspect Ratio, Pixel pitch, Brightness",
+      "quantity": 20,
+      "img": "https://i.ibb.co/NFyjtWF/0fb5d53c2706402a937781eb41129156.jpg"
+    },
+    {
+      "name": "Apple iPhone XS",
+      "supplierName": "Abdur Razzak",
+      "sold":13,
+      "description":"Apple iPhone XS has a 5.8. display, 4GB RAM, 64GB ROM storage for better performance. All kinds of sensors are included so that you can get a better experience. ",
+      "price": 100000,
+      "quantity": 19,
+      "img": "https://www.bdstall.com/asset/product-image/big_138069.jpg"
+    },
+    {
+      "name": "Washing Machine Singer 7 KG Top Loading",
+      "supplierName": "Abdur Razzak",
+      "sold":13,
+      "price": 24190,
+      "quantity": 1,
+      "img": "https://singerbd.com/pub/media/catalog/product/cache/482df9e5219860e2561c4ec99993e0ed/7/6/7680slp-update_1.jpg"
+    },
+    {
+      "name": "Chuwi HeroBook Pro intel Celeron, 8ram/256ssd",
+      "supplierName": "Abdur Razzak",
+      "sold":13,
+      "price": 36900,
+      "quantity": 10,
+      "img": "https://i.ibb.co/kSnnfrJ/7e89decafa388a5f31cb548396cd2b26.jpg"
+    },
+    {
+      "name": "Havit HV-H2212U 7.1 Gaming headset",
+      "supplierName": "Abdur Razzak",
+      "sold":13,
+      "price": 1950,
+      "quantity": 11,
+      "img": "https://i.ibb.co/2gyLx13/7982a7d5529380f14209cbd7fd870566.jpg"
+    },
+    
+    
+    {
+      "name": "Air Conditioner 1.5 Ton Singer Hot & Cool Green Inverter",
+      "supplierName": "Abdur Razzak",
+      "sold":13,
+      "price": 69990,
+      "quantity": 7,
+      "img": "https://singerbd.com/pub/media/catalog/product/cache/482df9e5219860e2561c4ec99993e0ed/1/8/18ag13grim.jpg"
+    }
+,{
+    "name": "Kotion Each G2000 Over -Ear Gaming HeadPhone With Mic ",
+    "supplierName": "Abdur Razzak",
+    "sold":13,
+    "price": 3099,
+    "quantity": 20, 
+    "img": "https://static-01.daraz.com.bd/p/0d0a15e5804994ca1ef0c31b4e1057ea.jpg"
+  },
+  {
+    "name": "Ti-800 NFC Desktop",
+    "supplierName": "Abdur Razzak",
+    "sold":13,
+    "price": 2250,
+    "quantity": 20,
+    "img": "https://www.bdstall.com/asset/product-image/big_168313.jpg"
+  },
+  {
+    "name": "Apple iPhone 8 Plus",
+    "supplierName": "Abdur Razzak",
+    "sold":13,
+    "price": 36900,
+    "quantity": 1,
+    "img": "https://www.bdstall.com/asset/product-image/big_132782.jpg"
+  },
+  {
+    "name": "Xiaomi Mi 5X Octa Core 4GB Ram",
+    "supplierName": "Abdur Razzak",
+    "sold":13,
+    "price":9500,
+    "quantity": 10,
+    "img": "https://www.bdstall.com/asset/product-image/big_61772.jpeg"
+  },
+  
+  {
+    "name": "WiWU Power Air 3-in-1 18W Wireless Charger",
+    "supplierName": "Abdur Razzak",
+    "sold":13,
+    "price":3200,
+    "quantity": 10,
+    "img": "https://www.bdstall.com/asset/product-image/big_167170.jpg"
+  }
+  ,
+  {
+    "name": "Apple Watch Series 7",
+    "supplierName": "Abdur Razzak",
+    "sold":13,
+    "price":3200,
+    "quantity": 10,
+    "img": "https://www.bdstall.com/asset/product-image/big_167435.jpg"
+  },
+  {
+    "name": "LTE 4G Modem with Wifi Router",
+    "supplierName": "Abdur Razzak",
+    "sold":13,
+    "price":1449,
+    "quantity": 10,
+    "img": "https://www.bdstall.com/asset/product-image/big_117858.jpeg"
+  },
+  {
+    "name": "Huaweri Power fi e8221 4g data card",
+    "supplierName": "Abdur Razzak",
+    "sold":13,
+    "price":3250,
+    "quantity": 10,
+    "img": "https://www.bdstall.com/asset/product-image/big_160350.jpg"
+  },
+{
+    "name": "Kotion Each G2000 Over -Ear Gaming HeadPhone With Mic ",
+    "supplierName": "Abdur Razzak",
+    "sold":13,
+    "price": 3099,
+    "quantity": 20, 
+    "img": "https://static-01.daraz.com.bd/p/0d0a15e5804994ca1ef0c31b4e1057ea.jpg"
+  },
+  {
+    "name": "Ti-800 NFC Desktop",
+    "supplierName": "Abdur Razzak",
+    "sold":13,
+    "price": 2250,
+    "quantity": 20,
+    "img": "https://www.bdstall.com/asset/product-image/big_168313.jpg"
+  },
+  {
+    "name": "Apple iPhone 8 Plus",
+    "supplierName": "Abdur Razzak",
+    "sold":13,
+    "price": 36900,
+    "quantity": 1,
+    "img": "https://www.bdstall.com/asset/product-image/big_132782.jpg"
+  },
+  {
+    "name": "Xiaomi Mi 5X Octa Core 4GB Ram",
+    "supplierName": "Abdur Razzak",
+    "sold":13,
+    "price":9500,
+    "quantity": 10,
+    "img": "https://www.bdstall.com/asset/product-image/big_61772.jpeg"
+  },
+  
+  {
+    "name": "WiWU Power Air 3-in-1 18W Wireless Charger",
+    "supplierName": "Abdur Razzak",
+    "sold":13,
+    "price":3200,
+    "quantity": 10,
+    "img": "https://www.bdstall.com/asset/product-image/big_167170.jpg"
+  }
+  ,
+  {
+    "name": "Apple Watch Series 7",
+    "supplierName": "Abdur Razzak",
+    "sold":13,
+    "price":3200,
+    "quantity": 10,
+    "img": "https://www.bdstall.com/asset/product-image/big_167435.jpg"
+  },
+  {
+    "name": "LTE 4G Modem with Wifi Router",
+    "supplierName": "Abdur Razzak",
+    "sold":13,
+    "price":1449,
+    "quantity": 10,
+    "img": "https://www.bdstall.com/asset/product-image/big_117858.jpeg"
+  },
+  {
+    "name": "Huaweri Power fi e8221 4g data card",
+    "supplierName": "Abdur Razzak",
+    "sold":13,
+    "price":3250,
+    "quantity": 10,
+    "img": "https://www.bdstall.com/asset/product-image/big_160350.jpg"
+  },
+  {
+    "name": "Netgear R54959 Ac 1760 Gigabit Smart Wifi Router",
+    "supplierName": "Abdur Razzak",
+    "sold":13,
+    "price":7500,
+    "quantity": 10,
+    "img": "https://www.bdstall.com/asset/product-image/big_141165.jpg"
+  },
+  {
+    "name": "Olax wd680 wifi pocket Router",
+    "supplierName": "Abdur Razzak",
+    "sold":13,
+    "price":2690,
+    "quantity": 10,
+    "img": "https://www.bdstall.com/asset/product-image/big_148199.jpg"
+  },
+  {
+    "name": "Huawei b311as-853 4g wifi Router ",
+    "supplierName": "Abdur Razzak",
+    "sold":13,
+    "price":4800,
+    "quantity": 10,
+    "img": "https://www.bdstall.com/asset/product-image/big_132279.jpg"
+  },
+  {
+      "name": "Dell Inspiron 15 3501, Intel i3 11th Gen 1115G4, 4GB Ram ",
+      "supplierName": "Abdur Razzak",
+      "sold":13,
+      "price":50500,
+      "quantity": 19,
+      "img": "https://i.ibb.co/6446QWT/8924a55cc34c09a63d669f2b9c012b0c.jpg"
+
+    },
+    {
+      "name": "Dell 18.5 inch led",
+      "supplierName": "Abdur Razzak",
+      "sold":13,
+      "price": 10079,
+      "quantity": 20,
+      "img": "https://i.ibb.co/NFyjtWF/0fb5d53c2706402a937781eb41129156.jpg"
+    },
+    {
+      "name": "Washing Machine Singer 7 KG Top Loading",
+      "supplierName": "Abdur Razzak",
+      "sold":13,
+      "price": 24190,
+      "quantity": 1,
+      "img": "https://singerbd.com/pub/media/catalog/product/cache/482df9e5219860e2561c4ec99993e0ed/7/6/7680slp-update_1.jpg"
+    },
+    {
+      "name": "Apple iPhone XS",
+      "supplierName": "Abdur Razzak",
+      "sold":13,
+      "price": 100000,
+      "quantity": 19,
+      "img": "https://www.bdstall.com/asset/product-image/big_138069.jpg"
+    },
+  {
+    "name": "Apple Watch Series 7",
+    "supplierName": "Abdur Razzak",
+    "sold":13,
+    "price":3200,
+    "quantity": 10,
+    "img": "https://www.bdstall.com/asset/product-image/big_167435.jpg"
+  }]
