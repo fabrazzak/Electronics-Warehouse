@@ -19,10 +19,11 @@ const AddItems = () => {
         const name = event.target.productName.value;
         const description = event.target.description.value;
         const supplierName = event.target.name.value;
+        const price = event.target.price.value;
         const quantity = event.target.quantity.value;
         const sold = event.target.sold.value;
         const img = event.target.url.value;
-        const product = { supplierName, email, name, description, quantity, sold, img };
+        const product = { supplierName,price, email, name, description, quantity, sold, img };
         console.log(product);
         fetch("https://desolate-bastion-81312.herokuapp.com/add-product", {
             method: "POST",
@@ -52,6 +53,7 @@ const AddItems = () => {
                 <input className='form-control mt-3 py-2' type="text" name="name" placeholder='Supplier Name' required />
                 <input className='form-control mt-3 py-2' type="email" name="email" value={email} required readOnly />
                 <input className='form-control mt-3 py-2' type="text" name="productName" placeholder='Product Name' required />
+                <input className='form-control mt-3 py-2' type="text" name="price" placeholder='Price' required />
                 <textarea name="description" className='form-control py-2 mt-3' placeholder='Description' cols="30" rows="5"></textarea>
                 <input className='form-control mt-3 py-2' type="number" name="quantity" placeholder='Quantity No.' required />
                 <input className='form-control mt-3 py-2' type="number" name="sold" placeholder='Sold No.' required />

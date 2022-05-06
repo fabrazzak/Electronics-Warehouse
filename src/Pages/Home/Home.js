@@ -64,7 +64,7 @@ const Home = () => {
 
                 </div>
             </div>
-            <div className='container py-lg-5'>
+            <div className='container py-lg-5 py-3'>
                 <h1 className='pb-lg-5 text-info text-center fw-bold'>Top <span className='text-black'>Sold</span> Items</h1>
                 <div className="row row-cols-1 row-cols-md-3 g-4 ">
                     {
