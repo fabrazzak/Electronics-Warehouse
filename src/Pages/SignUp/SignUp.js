@@ -26,7 +26,6 @@ const SignUp = () => {
        await createUserWithEmailAndPassword(email,password);
        await updateProfile({displayName});
         await sendEmailVerification();
-      
         toast("Please Verify Your Email!");
         event.target.reset();
         if(error){
