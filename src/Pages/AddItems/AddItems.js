@@ -3,6 +3,7 @@ import { useAuthState } from 'react-firebase-hooks/auth';
 import { toast, ToastContainer } from 'react-toastify';
 import auth from '../../firebase.init';
 import Loading from '../Loading/Loading';
+import PagesTitle from '../PagesTitle/PagesTitle';
 
 const AddItems = () => {
 
@@ -45,6 +46,7 @@ const AddItems = () => {
     }
     return (
         <div className='sigup-form rounded mx-auto mt-lg-5 py-lg-5 px-lg-4'>
+            <PagesTitle title="Add-Items"></PagesTitle>
             <h2 className='pb-3'>Please add Items !!!!</h2>
             <form onSubmit={handleOnSubmitForm}>
                 <input className='form-control mt-3 py-2' type="text" name="name" placeholder='Supplier Name' required />

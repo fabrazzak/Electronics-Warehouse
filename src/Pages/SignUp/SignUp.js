@@ -3,6 +3,7 @@ import { useCreateUserWithEmailAndPassword, useSendEmailVerification, useUpdateP
 import { useNavigate } from 'react-router-dom';
 import { toast } from 'react-toastify';
 import auth from '../../firebase.init';
+import PagesTitle from '../PagesTitle/PagesTitle';
 
 import '../SignUp/SignUp.css'
 import SocialLogin from '../SocialLogin/SocialLogin';
@@ -42,6 +43,7 @@ const SignUp = () => {
     console.log(user);
     return (
         <div className='sigup-form rounded mx-auto mt-lg-5 py-lg-5 px-lg-4'>
+            <PagesTitle title='Sign Up'></PagesTitle>
                 <h2 className='pb-3'>Please Register  !</h2>
                 <form onSubmit={handleOnSubmitForm}>
                     <input className='form-control mt-3 py-2' type="text" name="name" placeholder='Your Name' required  />

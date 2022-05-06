@@ -5,6 +5,7 @@ import { useNavigate } from 'react-router-dom';
 import SocialLogin from '../SocialLogin/SocialLogin';
 import "../Login/Login.css"
 import Loading from '../Loading/Loading';
+import PagesTitle from '../PagesTitle/PagesTitle';
 
 const Login = () => {
     const navigate=useNavigate();
@@ -41,6 +42,7 @@ const Login = () => {
     }
     return (
         <div className='sigup-form rounded mx-auto mt-lg-5 py-lg-5 px-lg-4'>
+            <PagesTitle title="Login"></PagesTitle>
             <h2 className='pb-3'>Please Login!</h2>
             <form onSubmit={handleOnSubmitForm}>
                 <input className='form-control mt-3 py-2' type="email" name="email" placeholder='Your Email' required />

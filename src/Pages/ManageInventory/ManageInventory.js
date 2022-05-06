@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import PagesTitle from '../PagesTitle/PagesTitle';
 import useProducts from '../useProducts/useProducts';
 import ManageInventoryProduct from './ManageInventoryProduct/ManageInventoryProduct';
 
@@ -8,6 +9,7 @@ const ManageInventory = () => {
      
     return (
         <div className='container py-5'>
+            <PagesTitle title="Manage-Inventory"></PagesTitle>
             <h2 className='text-center pb-4   '><Link to="/add-items"  className='text-decoration-none  '>Add New Items +</Link>
 </h2>
             <div className="row row-cols-1 row-cols-md-5 g-4" >

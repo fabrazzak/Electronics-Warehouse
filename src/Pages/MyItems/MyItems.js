@@ -7,6 +7,7 @@ import auth from '../../firebase.init';
 import Loading from '../Loading/Loading';
 import ManageInventory from '../ManageInventory/ManageInventory';
 import ManageInventoryProduct from '../ManageInventory/ManageInventoryProduct/ManageInventoryProduct';
+import PagesTitle from '../PagesTitle/PagesTitle';
 import MyitemsDetails from './MyitemsDetails';
 
 const MyItems = () => {
@@ -49,6 +50,7 @@ const MyItems = () => {
 
     return (
         <div className='container'>
+            <PagesTitle title="My-Items"></PagesTitle>
             <h3 className='text-center py-lg-4'>List of all my added items </h3>
             <h3 className='text-center '>Total Items {myItems.length}</h3>
             <div className="row row-cols-1 row-cols-md-4 g-4">

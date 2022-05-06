@@ -4,6 +4,7 @@ import { ToastContainer } from 'react-toastify';
 import AboutUs from '../AboutUs/AboutUs';
 import Footer from '../Footer/Footer';
 import HomeBanner from '../HomeBanner/HomeBanner';
+import PagesTitle from '../PagesTitle/PagesTitle';
 import Products from '../Products/Products';
 import TopQuantityProduct from '../TopQuantityProduct/TopQuantityProduct';
 import TopSoldProduct from '../TopSoldProduct/TopSoldProduct';
@@ -39,6 +40,7 @@ const Home = () => {
     return (
         
         <div >
+            <PagesTitle title="Home"></PagesTitle>
             <HomeBanner></HomeBanner>
             
             <div className='container py-lg-5'>

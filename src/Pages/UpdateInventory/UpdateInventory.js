@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { toast, ToastContainer } from 'react-toastify';
+import PagesTitle from '../PagesTitle/PagesTitle';
 import "../UpdateInventory/UpdateInventory.css"
 
 const UpdateInventory = () => {
@@ -72,6 +73,7 @@ const UpdateInventory = () => {
 
     return (
         <div>
+            <PagesTitle title="Update Inventory"></PagesTitle>
             <h3 className='text-center pt-3'>Product Details !</h3>
 
             <div className="card-group inventory-card  mx-auto mt-3 mb-5 pb-5" >
