@@ -4,7 +4,7 @@ const useProducts = () => {
 
     const [product, setProduct] = useState([]);
     useEffect(() => {
-        fetch('https://desolate-bastion-81312.herokuapp.com/product')
+        fetch('http://localhost:5000/product')
             .then(res => res.json())
             .then(data => setProduct(data))
     }, [])

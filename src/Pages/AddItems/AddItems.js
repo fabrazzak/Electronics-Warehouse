@@ -23,9 +23,9 @@ const AddItems = () => {
         const quantity = event.target.quantity.value;
         const sold = event.target.sold.value;
         const img = event.target.url.value;
-        const product = { supplierName,price, email, name, description, quantity, sold, img };
+        const product = { supplierName, price, email, name, description, quantity, sold, img };
         console.log(product);
-        fetch("https://desolate-bastion-81312.herokuapp.com/add-product", {
+        fetch("http://localhost:5000/add-product", {
             method: "POST",
             headers: { "content-type": "application/json" },
             body: JSON.stringify(product)
