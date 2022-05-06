@@ -7,8 +7,6 @@ import "../Login/Login.css"
 import Loading from '../Loading/Loading';
 
 const Login = () => {
-
-    
     const navigate=useNavigate();
     const [
         signInWithEmailAndPassword,
@@ -23,8 +21,6 @@ const Login = () => {
       return <Loading></Loading>
   } 
     
-    
-   
     const handleOnSubmitForm = event => {
         
         event.preventDefault();
