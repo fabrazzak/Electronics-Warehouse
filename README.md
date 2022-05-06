@@ -1,6 +1,7 @@
-# Getting Started with Create React App
+# Live site link:
+ https://electronics-warehouse-79cca.web.app/
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
 
 ## Available Scripts
 
