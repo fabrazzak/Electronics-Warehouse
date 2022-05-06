@@ -1,12 +1,12 @@
 import React from 'react';
 import { toast, ToastContainer } from 'react-toastify';
 
-const MyitemsDetails = ({singleProduct}) => {
+const MyitemsDetails = ({ singleProduct }) => {
     const { _id, name, price, description, quantity, sold, supplierName, img } = singleProduct;
     const handleOnClickRemoveItem = id => {
         const confirm = window.confirm("Are you sure delete this item?");
         if (confirm) {
-            const url = `http://localhost:5000/product/${id}`;
+            const url = `https://desolate-bastion-81312.herokuapp.com/product/${id}`;
             fetch(url, {
                 method: "DELETE",
                 headers: { "content-type": "application/json" },
@@ -20,10 +20,10 @@ const MyitemsDetails = ({singleProduct}) => {
         }
 
     }
-    const handleOnSubmitQuantity =event =>{
+    const handleOnSubmitQuantity = event => {
         event.preventDefault();
-        const confirm=window.confirm('Are You Sure? ');
-        if(confirm){
+        const confirm = window.confirm('Are You Sure? ');
+        if (confirm) {
             const newQuantity = parseInt(event.target.number.value);
             const totalQuantity = parseInt(quantity + newQuantity);
             const id = _id;
@@ -31,7 +31,7 @@ const MyitemsDetails = ({singleProduct}) => {
             const user = { id, totalQuantity, totalSold };
 
             console.log(totalQuantity);
-            const url = `http://localhost:5000/product/${id}`
+            const url = `https://desolate-bastion-81312.herokuapp.com/product/${id}`
             fetch(url, {
                 method: "PUT",
                 headers: { "content-type": "application/json" },
@@ -43,18 +43,18 @@ const MyitemsDetails = ({singleProduct}) => {
                 })
             event.target.reset();
             toast("Quantity Successfully added.")
-        }  
+        }
 
     }
-    const handleOnClickDelivered =()=>{
-        if(quantity>0){
+    const handleOnClickDelivered = () => {
+        if (quantity > 0) {
             const totalQuantity = quantity - 1;
             const id = _id;
             const totalSold = parseInt(sold) + 1;
             const user = { id, totalQuantity, totalSold };
 
             console.log(totalQuantity);
-            const url = `http://localhost:5000/product/${id}`
+            const url = `https://desolate-bastion-81312.herokuapp.com/product/${id}`
             fetch(url, {
                 method: "PUT",
                 headers: { "content-type": "application/json" },
@@ -66,12 +66,12 @@ const MyitemsDetails = ({singleProduct}) => {
                 })
             toast("Quantity Successfully Delivered.!!!!")
 
-        }else{
+        } else {
             alert("Your Quantity is very low");
-            
+
         }
 
-        
+
 
     }
 
@@ -89,7 +89,7 @@ const MyitemsDetails = ({singleProduct}) => {
                 </div>
                 <form className='d-flex ' onSubmit={handleOnSubmitQuantity}>
 
-                    <input type="number" name="number" className='input-number  w-50 '  placeholder='Type Quantity' required autoComplete='off' />
+                    <input type="number" name="number" className='input-number  w-50 ' placeholder='Type Quantity' required autoComplete='off' />
                     <input type="submit" className='btn-info  ms rounded w-50 ' value="Add Quantity" />
 
                 </form>

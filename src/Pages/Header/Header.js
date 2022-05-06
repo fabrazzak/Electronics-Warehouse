@@ -38,6 +38,7 @@ const Header = () => {
                         >
                             
                                 <CustomLink className="nav-item " to='/'>Home</CustomLink>
+                                <CustomLink className="nav-item " to='/blog'>Blog</CustomLink>
 
                                 {
                                 user ? <>

@@ -6,40 +6,40 @@ import Loading from '../Loading/Loading';
 
 const AddItems = () => {
 
-    const [user,loading] = useAuthState(auth);
-    if(loading){
+    const [user, loading] = useAuthState(auth);
+    if (loading) {
         return <Loading></Loading>
     }
-    const {displayName,email}=user;
+    const { displayName, email } = user;
 
-    const handleOnSubmitForm =event=>{
+    const handleOnSubmitForm = event => {
         event.preventDefault();
-       
-        const name=event.target.productName.value;
-        const description=event.target.description.value;
-        const supplierName=event.target.name.value;
-        const quantity=event.target.quantity.value;
-        const sold=event.target.sold.value;
-        const img=event.target.url.value;
-        const product = {supplierName,email,name,description,quantity,sold,img};
+
+        const name = event.target.productName.value;
+        const description = event.target.description.value;
+        const supplierName = event.target.name.value;
+        const quantity = event.target.quantity.value;
+        const sold = event.target.sold.value;
+        const img = event.target.url.value;
+        const product = { supplierName, email, name, description, quantity, sold, img };
         console.log(product);
-        fetch("http://localhost:5000/add-product",{
-            method:"POST",
-            headers:{"content-type":"application/json"},
+        fetch("https://desolate-bastion-81312.herokuapp.com/add-product", {
+            method: "POST",
+            headers: { "content-type": "application/json" },
             body: JSON.stringify(product)
         })
-        .then(res =>res.json())
-        .then(data =>{
-            if (data.acknowledged){
-                toast("Product Successfully added !!!!!")
+            .then(res => res.json())
+            .then(data => {
+                if (data.acknowledged) {
+                    toast("Product Successfully added !!!!!")
 
-            }
-            console.log(data)
+                }
+                console.log(data)
 
-        })
-        
+            })
+
         event.target.reset();
-       
+
 
 
     }
@@ -53,10 +53,10 @@ const AddItems = () => {
                 <textarea name="description" className='form-control py-2 mt-3' placeholder='Description' cols="30" rows="5"></textarea>
                 <input className='form-control mt-3 py-2' type="number" name="quantity" placeholder='Quantity No.' required />
                 <input className='form-control mt-3 py-2' type="number" name="sold" placeholder='Sold No.' required />
-                <input className='form-control mt-3 py-2' type="text" name="url" placeholder='Image UR' required />              <input className='form-control mt-3 py-2 btn-info fs-5 fw-bold' type="submit" value="Submit" /> 
-                <ToastContainer></ToastContainer>              
+                <input className='form-control mt-3 py-2' type="text" name="url" placeholder='Image UR' required />              <input className='form-control mt-3 py-2 btn-info fs-5 fw-bold' type="submit" value="Submit" />
+                <ToastContainer></ToastContainer>
 
-                
+
             </form>
         </div>
     );

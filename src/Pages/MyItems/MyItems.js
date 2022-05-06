@@ -10,26 +10,26 @@ import ManageInventoryProduct from '../ManageInventory/ManageInventoryProduct/Ma
 import MyitemsDetails from './MyitemsDetails';
 
 const MyItems = () => {
-    const [myItems,setMyitems]=useState([]);
-    const [user,loading]=useAuthState(auth);
+    const [myItems, setMyitems] = useState([]);
+    const [user, loading] = useAuthState(auth);
     const { inventoryId } = useParams();
-    const id=inventoryId;
-    if(loading){
+    const id = inventoryId;
+    if (loading) {
         return <Loading></Loading>
     }
-    const {  email } = user;
+    const { email } = user;
     console.log(email)
-    const url =`http://localhost:5000/add-product?email=${email}`;
+    const url = `https://desolate-bastion-81312.herokuapp.com/add-product?email=${email}`;
     fetch(url)
-    .then(res =>res.json())
-    .then(data =>{
-        console.log(data);
-        setMyitems(data);
-    })
-    const handleOnClickRemoveItem =()=>{
+        .then(res => res.json())
+        .then(data => {
+            console.log(data);
+            setMyitems(data);
+        })
+    const handleOnClickRemoveItem = () => {
         const confirm = window.confirm("Are you sure delete this item?");
         if (confirm) {
-            const url = `http://localhost:5000/product/${id}`;
+            const url = `https://desolate-bastion-81312.herokuapp.com/product/${id}`;
             fetch(url, {
                 method: "DELETE",
                 headers: { "content-type": "application/json" },
@@ -46,19 +46,19 @@ const MyItems = () => {
 
 
     }
-    
+
     return (
         <div className='container'>
             <h3 className='text-center py-lg-4'>List of all my added items </h3>
             <h3 className='text-center '>Total Items {myItems.length}</h3>
             <div className="row row-cols-1 row-cols-md-4 g-4">
                 {
-                    myItems.map(pd => <MyitemsDetails key={pd._id}  singleProduct={pd}></MyitemsDetails>)
+                    myItems.map(pd => <MyitemsDetails key={pd._id} singleProduct={pd}></MyitemsDetails>)
                 }
-                
+
 
             </div>
-           
+
         </div>
     );
 };

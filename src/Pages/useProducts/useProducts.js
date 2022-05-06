@@ -4,12 +4,12 @@ const useProducts = () => {
 
     const [product, setProduct] = useState([]);
     useEffect(() => {
-        fetch('http://localhost:5000/product')
+        fetch('https://desolate-bastion-81312.herokuapp.com/product')
             .then(res => res.json())
             .then(data => setProduct(data))
-    }, [product])
+    }, [])
 
-    return  [product, setProduct];
+    return [product, setProduct];
 };
 
 export default useProducts;

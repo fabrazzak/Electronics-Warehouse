@@ -1,0 +1,31 @@
+[
+    
+    {
+      "name": "Devid Warner",
+      "Position":"CEO & Manager",
+      "phone":"017777785525",
+      "email":"devid3434@gmail.com",
+      
+
+      "details":"I am Devid Warner. Numquam doloribus beatae totam dicta, natus, explicabo saepe ab illum enim eligendi, facilis a ducimus sequi deleniti. Quisquam ullam non reprehenderit quia aliquid quaerat, expedita, necessitatibus error possimus voluptatem eaque est provident praesentium aspernatur rerum porro!",
+      "img": "https://i.ibb.co/dL5b2v8/pexels-tima-miroshnichenko-5336954.jpg"
+      },
+      {
+    "name": "Karly Cambale",
+    "Position":"Manager",
+      "phone":"017777785525",
+        "email":"karlycamble3434@gmail.com",
+    "description":" I am Karly Cambale.Temporibus praesentium ex laudantium sunt ratione saepe atque rem dolor, autem debitis reiciendis fuga officia libero totam eaque commodi cumque quos inventore tenetur eius ipsum blanditiis animi.",
+    "img": "https://i.ibb.co/t2PPFR0/pexels-dinielle-de-veyra-4195342.jpg"
+  },
+      
+    {
+      "name": "Duran Macki",
+      "Position":"Super Visor",
+        "phone":"017777785525",
+          "email":"duranmacki3434@gmail.com",
+       "description":"I am Duran Macki. Porro sint sunt laborum nam ipsam sit exercitationem eos, corrupti, ut similique, recusandae qui dolor deleniti cumque blanditiis mollitia magnam cum esse incidunt quia voluptatum minus vero natus",
+       "img": "https://i.ibb.co/wYR5mgY/pexels-mikhail-nilov-6592370.jpg"
+       
+      }
+]
