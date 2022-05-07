@@ -8,22 +8,23 @@ import ManageInventoryProduct from './ManageInventoryProduct/ManageInventoryProd
 const ManageInventory = () => {
     const [product, setProduct] = useState([]);
     const [size, setSize] = useState(10);
-    const [page, setPage] = useState(0);
+    const [pageCount, setPageCount] = useState(0);
+    const [page, setPage] = useState(1);
 
     useEffect(() => {
-        fetch(`http://localhost:5000/product?page=${page}&pagecount=${size}`)
+        fetch(`https://desolate-bastion-81312.herokuapp.com/product?page=${page}&pagecount=${size}`)
             .then(res => res.json())
             .then(data => setProduct(data))
     }, [page, size])
 
     useEffect(() => {
-        fetch('http://localhost:5000/page-count')
+        fetch('https://desolate-bastion-81312.herokuapp.com/page-count')
             .then(res => res.json())
             .then(data => {
                 const count = Math.ceil(data.result / size);
-                setSize(count);
+                setPageCount(count);
             })
-    }, [])
+    }, [size])
 
 
     return (
@@ -39,7 +40,7 @@ const ManageInventory = () => {
 
             <div className='d-flex mx-auto justify-content-center py-5 '>
                 {
-                    [...Array(page).keys()].map(number => <button onClick={setPage(number)} className={page = number ? "btn-link bg-info rounded ms-3 px-3 text-decoration-none fs-5 fw-bold" : "btn-link bg-white rounded ms-3 px-3 text-decoration-none fs-5 fw-bold"}>{number + 1}</button>)
+                    [...Array(pageCount).keys()].map(number => <button onClick={() => setPage(number)} className={page === number ? "btn-link text-decoration-none bg-primary text-white border-primary ms-3 rounded px-2 fs-5 fw-bold " : "btn-link text-decoration-none bg-white ms-3 rounded px-2 fs-5 border-primary  fw-bold"}>{number + 1}</button>)
                 }
                 <select onChange={e => setSize(e.target.value)} className='btn-link bg-white rounded ms-3 px-3 text-decoration-none fs-5 fw-bold' >
                     <option value="5">5</option>

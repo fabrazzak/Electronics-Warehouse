@@ -44,7 +44,7 @@ const Home = () => {
             <HomeBanner></HomeBanner>
             
             <div className='container py-lg-5'>
-                <h1 className='pb-lg-5 text-info text-center fw-bold'>Inventory</h1>
+                <h1 className='pb-lg-5  text-center fw-bold'>Inventory</h1>
                 <div className="row row-cols-1 row-cols-md-3 g-4 ">
                     {
                         sixProduct.map(product => <Products key = {product._id} product={product}> </Products>)
@@ -64,7 +64,7 @@ const Home = () => {
 
                 </div>
             </div>
-            <div className='container py-lg-5 py-3'>
+            <div className='container py-lg-5 py-5'>
                 <h1 className='pb-lg-5 text-info text-center fw-bold'>Top <span className='text-black'>Sold</span> Items</h1>
                 <div className="row row-cols-1 row-cols-md-3 g-4 ">
                     {
@@ -76,7 +76,7 @@ const Home = () => {
             
             
 
-            <Footer></Footer>               
+                          
           
             <ToastContainer></ToastContainer>
         </div>

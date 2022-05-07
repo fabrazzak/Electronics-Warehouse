@@ -8,12 +8,12 @@ import { useAuthState } from 'react-firebase-hooks/auth';
 // Your web app's Firebase configuration
 
 const firebaseConfig = {
-    apiKey: "AIzaSyCa6LscNHe3dHJkMjY9s2sXWtrt10Oze4U",
-    authDomain: "electronics-warehouse-79cca.firebaseapp.com",
-    projectId: "electronics-warehouse-79cca",
-    storageBucket: "electronics-warehouse-79cca.appspot.com",
-    messagingSenderId: "959024762673",
-    appId: "1:959024762673:web:677a70b757d24db2936a10"
+    apiKey: process.env.REACT_APP_ApiKey,
+    authDomain: process.env.REACT_APP_AuthDomain,
+    projectId:process.env.REACT_APP_projectId,
+    storageBucket:process.env.REACT_APP_storageBucket,
+    messagingSenderId:process.env.REACT_APP_messagingSenderId,
+    appId:process.env.REACT_APP_appId,
 };
 
 // Initialize Firebase

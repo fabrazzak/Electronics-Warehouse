@@ -13,6 +13,7 @@ import AddItems from './Pages/AddItems/AddItems';
 import MyItems from './Pages/MyItems/MyItems';
 import RequireAuth from './Pages/RequireAuth/RequireAuth';
 import Blog from './Pages/Blog/Blog';
+import Footer from './Pages/Footer/Footer';
 
 function App() {
   return (
@@ -48,6 +49,7 @@ function App() {
         <Route path='/signup' element={<SignUp></SignUp>}></Route>
         <Route path='/reset-password' element={<ResetPassword></ResetPassword>}></Route>
       </Routes>
+      <Footer></Footer> 
 
     </div>
   );

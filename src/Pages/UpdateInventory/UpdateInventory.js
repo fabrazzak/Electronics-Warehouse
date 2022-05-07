@@ -9,7 +9,7 @@ const UpdateInventory = () => {
     const [product, setProduct] = useState({});
     const { img, name, description, price, quantity, sold, supplierName } = product;
     useEffect(() => {
-        const url = `http://localhost:5000/product/${inventoryId}`
+        const url = `https://desolate-bastion-81312.herokuapp.com/product/${inventoryId}`
         fetch(url)
             .then(res => res.json())
             .then(data => setProduct(data))
@@ -25,7 +25,7 @@ const UpdateInventory = () => {
             const user = { id, totalQuantity, totalSold };
 
             console.log(totalQuantity);
-            const url = `http://localhost:5000/product/${inventoryId}`
+            const url = `https://desolate-bastion-81312.herokuapp.com/product/${inventoryId}`
             fetch(url, {
                 method: "PUT",
                 headers: { "content-type": "application/json" },
@@ -50,7 +50,7 @@ const UpdateInventory = () => {
             const user = { id, totalQuantity, totalSold };
 
             console.log(totalQuantity);
-            const url = `http://localhost:5000/product/${inventoryId}`
+            const url = `https://desolate-bastion-81312.herokuapp.com/product/${inventoryId}`
             fetch(url, {
                 method: "PUT",
                 headers: { "content-type": "application/json" },

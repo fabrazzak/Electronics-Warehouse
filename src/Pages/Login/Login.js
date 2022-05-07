@@ -1,14 +1,16 @@
 import React, { useState } from 'react';
-import auth from '../../firebase.init';
 import { useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import { useNavigate } from 'react-router-dom';
 import SocialLogin from '../SocialLogin/SocialLogin';
 import "../Login/Login.css"
 import Loading from '../Loading/Loading';
 import PagesTitle from '../PagesTitle/PagesTitle';
+import axios from 'axios';
+import auth from '../../firebase.init';
+
 
 const Login = () => {
-    const navigate=useNavigate();
+    const navigate = useNavigate();
     const [
         signInWithEmailAndPassword,
         user,
@@ -18,26 +20,26 @@ const Login = () => {
     if (user) {
         navigate("/");
     }
-  if(loading){
-      return <Loading></Loading>
-  } 
-    
-    const handleOnSubmitForm = event => {
-        
+    if (loading) {
+        return <Loading></Loading>
+    }
+
+    const handleOnSubmitForm =event => {
+
         event.preventDefault();
         const email = event.target.email.value;
         const password = event.target.password.value;
         signInWithEmailAndPassword(email, password);
         event.target.reset();
 
-    
-       
+
+
 
     }
-    const handleOnClickRegisterLogin =()=>{
+    const handleOnClickRegisterLogin = () => {
         navigate("/signup")
     }
-    const  handleOnClickForgetPassword = ()=>{
+    const handleOnClickForgetPassword = () => {
         navigate('/reset-password');
     }
     return (
@@ -51,7 +53,7 @@ const Login = () => {
                 <p className='fs-6 my-3 login-toggle-regiter' onClick={handleOnClickRegisterLogin}>Are you new to warehouse ? <span className='text-info fw-bold '>Please Register!</span></p>
                 <p className='text-info fw-bold social-cursor' onClick={handleOnClickForgetPassword}>Forget Password?</p>
                 {
-                    error ? <p className='text-danger '>{error?.message.slice(10,50)}</p>:" "
+                    error ? <p className='text-danger '>{error?.message.slice(10, 50)}</p> : " "
                 }
                 <SocialLogin></SocialLogin>
             </form>
