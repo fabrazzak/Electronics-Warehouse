@@ -14,8 +14,10 @@ const SocialLogin = () => {
     if(user){
         navigate(from, { replace: true });
     }
+    console.log(user);
    
     const handelOnClickSocial = ()=>{
+        console.log("click")
         signInWithGoogle();
     }
     return (
